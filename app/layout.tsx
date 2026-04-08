@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     siteName: "Ella Hansen Portfolio",
     images: [
       {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
+        url: "/og.png",
+        width: 1200,
+        height: 630,
       },
     ],
     locale: "en-US",
@@ -42,9 +42,7 @@ export const metadata: Metadata = {
     title: "Chronark",
     card: "summary_large_image",
   },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+  icons: {},
 };
 const inter = Inter({
   subsets: ["latin"],

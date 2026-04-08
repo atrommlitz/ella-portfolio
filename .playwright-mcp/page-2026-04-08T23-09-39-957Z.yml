@@ -1,0 +1,12 @@
+- generic [active] [ref=e1]:
+  - text: "screen: lg"
+  - generic [ref=e5]:
+    - navigation [ref=e6]:
+      - list [ref=e7]:
+        - link "Portfolio" [ref=e8] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+    - heading "Ella Hansen" [level=1] [ref=e11]
+    - heading "Welcome to my Design and Marketing Portfolio." [level=2] [ref=e14]
+  - alert [ref=e15]
