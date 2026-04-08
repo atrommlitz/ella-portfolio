@@ -4,6 +4,7 @@ import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 import { PageTransition } from "./components/page-transition";
+import Particles from "./components/particles";
 
 export const metadata: Metadata = {
   title: {
@@ -66,9 +67,10 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-gradient-to-tl from-blue-950 via-black to-blue-950 min-h-screen ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        className={`bg-gradient-to-tl from-blue-200 via-white to-blue-200 min-h-screen ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
+        <Particles className="fixed inset-0 -z-10" quantity={100} />
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
