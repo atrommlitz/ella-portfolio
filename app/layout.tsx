@@ -3,19 +3,19 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import { PageTransition } from "./components/page-transition";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Ella Hansen Portfolio",
+    template: "%s | Ella Hansen Portfolio",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Design and Marketing Portfolio of Ella Hansen",
   openGraph: {
-    title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    title: "Ella Hansen Portfolio",
+    description: "Design and Marketing Portfolio of Ella Hansen",
     url: "https://chronark.com",
-    siteName: "chronark.com",
+    siteName: "Ella Hansen Portfolio",
     images: [
       {
         url: "https://chronark.com/og.png",
@@ -69,7 +69,7 @@ export default function RootLayout({
         className={`bg-gradient-to-tl from-blue-950 via-black to-blue-950 min-h-screen ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
-        {children}
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

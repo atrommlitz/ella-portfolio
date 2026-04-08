@@ -38,6 +38,7 @@ module.exports = {
 			},
 			animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",
+				"page-enter": "page-enter 0.4s ease-out forwards",
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
@@ -80,6 +81,16 @@ module.exports = {
 					},
 					"100%": {
 						opacity: "0%",
+					},
+				},
+				"page-enter": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(12px)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0px)",
 					},
 				},
 				title: {
