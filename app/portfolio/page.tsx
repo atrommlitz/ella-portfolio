@@ -25,10 +25,6 @@ export default async function ProjectsPage() {
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
             Portfolio
           </h2>
-          <p className="mt-4 text-black">
-            These are some of the cool projects I've done for school and for
-            work.
-          </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
