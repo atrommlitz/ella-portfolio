@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/tab_logo.png",
-    icon: "/tab_logo.png",
+    shortcut: "/ella-hansen-logo.png",
+    icon: "/ella-hansen-logo.png",
   },
 };
 const inter = Inter({
