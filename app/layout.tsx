@@ -42,7 +42,10 @@ export const metadata: Metadata = {
     title: "Chronark",
     card: "summary_large_image",
   },
-  icons: {},
+  icons: {
+    shortcut: "/tab_logo.png",
+    icon: "/tab_logo.png",
+  },
 };
 const inter = Inter({
   subsets: ["latin"],
