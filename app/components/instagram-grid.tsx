@@ -8,14 +8,17 @@ interface InstagramGridProps {
 
 export function InstagramGrid({ urls }: InstagramGridProps) {
 	useEffect(() => {
-		const script = document.createElement("script");
-		script.src = "https://www.instagram.com/embed.js";
-		script.async = true;
-		document.body.appendChild(script);
-
-		return () => {
-			document.body.removeChild(script);
-		};
+		if ((window as any).instgrm) {
+			(window as any).instgrm.Embeds.process();
+		} else {
+			const existing = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+			if (!existing) {
+				const script = document.createElement("script");
+				script.src = "https://www.instagram.com/embed.js";
+				script.async = true;
+				document.body.appendChild(script);
+			}
+		}
 	}, []);
 
 	return (
